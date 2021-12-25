@@ -10,7 +10,7 @@ namespace HairSalon.Controllers
   {
     private readonly HairSalonContext _db;
 
-    public StylistsController(ToDoListContext db)
+    public StylistsController(HairSalonContext db)
     {
       _db = db;
     }
@@ -28,7 +28,7 @@ namespace HairSalon.Controllers
     [HttpPost]
     public ActionResult Create(Stylist stylist)
     {
-        _db.Categories.Add(stylist);
+        _db.Stylists.Add(stylist);
         _db.SaveChanges();
         return RedirectToAction("Index");
     }
