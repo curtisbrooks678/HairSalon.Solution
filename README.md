@@ -29,10 +29,10 @@ This application helps keep track of stylists and clients for a hair salon busin
   * To view details on the schema, click the schema tab, then refresh the schema page using the arrows icon just below the schema tab.
 * Set up appsettings.json file:
   * In code editor, create "appsettings.json" file in top level of cloned repository directory.
-  * Add the following code below to this new file and save: 
+  * Add the following code below to this new file, enter your MySQL password in the indicated space in the code below and save: 
     {
     "ConnectionStrings": {
-        "DefaultConnection": "Server=localhost;Port=3306;database=curtis_brooks;uid=root;pwd=epicodus;"
+        "DefaultConnection": "Server=localhost;Port=3306;database=curtis_brooks;uid=root;pwd={ENTER YOUR MYSQL PASSWORD HERE};"
       }
     }
 * To run program:
